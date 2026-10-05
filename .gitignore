@@ -1,0 +1,29 @@
+# Obsidian: per-device window layout, plugin state, caches and logs
+.obsidian/workspace*.json
+.obsidian/plugins/
+.obsidian/cache/
+.obsidian/logs/
+.trash/
+
+# Raw binary files (PDFs, images, audio) stay on your device, not in git
+Raw/Files/*
+!Raw/Files/.gitkeep
+
+# Drafts you are not ready to share
+Drafts/
+
+# Operating system clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets: never commit passwords, tokens or keys
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Temporary files
+*.tmp
+*.swp
