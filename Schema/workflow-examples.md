@@ -1,6 +1,6 @@
 # Workflow examples
 
-Short worked examples of the four jobs the agent does here. Commands that use `scripts/wiki_tool.py` work from tutorial step 04 onward.
+Short worked examples of the four jobs the agent does here. Every command is explained in `command-reference.md`; on Windows, use `python` (or `py`) instead of `python3`.
 
 ## Ingest a new source
 

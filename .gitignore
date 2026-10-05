@@ -24,6 +24,10 @@ desktop.ini
 *.key
 *.pem
 
+# Python cache (created when the scripts run)
+__pycache__/
+*.pyc
+
 # Temporary files
 *.tmp
 *.swp

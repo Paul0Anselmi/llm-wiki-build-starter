@@ -16,7 +16,7 @@ The vault will have three layers:
 
 The vault is built one step at a time. Each step adds one small piece and is saved as its own git commit, named after the step. You can always see what a step changed, and go back to it.
 
-This is step `tutorial-03-templates`. The agent has its rules and skills, and `_templates/` has a template for each kind of note. The Raw and Wiki folders are still empty.
+This is step `tutorial-04-tooling`. The agent has its rules, skills and templates, and `scripts/` now has the tools that build the indexes and check the wiki. The Raw and Wiki folders are still empty.
 
 ## What is here
 
@@ -40,7 +40,7 @@ This is step `tutorial-03-templates`. The agent has its rules and skills, and `_
 | `Schema/` | The rules the agent follows: note properties, names, a lint checklist and worked examples. |
 | `_templates/` | Templates for new notes: `source-note`, `concept-note`, `topic-note`, `entity-note`, `project-note` and `log-note`. |
 | `.agents/skills/` | Skills the agent uses inside this vault: ingest, query, lint and maintain. Obsidian hides folders that start with a dot, so you will not see it there. |
-| `scripts/` | Helper scripts that check the wiki. |
+| `scripts/` | `wiki_tool.py` (builds the indexes and checks the wiki), `audit_public.py` (checks nothing private gets committed) and `install_hooks.sh` (optional). |
 | `tutorial/` | Notes about the tutorial steps. |
 
 Each folder that is still empty holds a hidden `.gitkeep` file. Git does not save empty folders, so this tiny file keeps them in the history.
@@ -49,6 +49,16 @@ Each folder that is still empty holds a hidden `.gitkeep` file. Git does not sav
 
 In Obsidian, create a new note, open the command palette (`Ctrl+P`, or `Cmd+P` on a Mac) and run **Templates: Insert template**. Pick a template and Obsidian fills in the title and today's date.
 
+## Checking the wiki
+
+Open a terminal in the vault folder and run:
+
+```
+python3 scripts/wiki_tool.py doctor
+```
+
+On Windows, type `python` (or `py`) instead of `python3`. All commands are listed in `Schema/command-reference.md`.
+
 ## What comes next
 
-Step `tutorial-04-tooling` adds `scripts/wiki_tool.py`, the script that builds the indexes and checks the wiki.
+Step `tutorial-05-first-ingest` adds the first source to `Raw/Sources/` and compiles it into Wiki notes.
