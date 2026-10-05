@@ -16,11 +16,13 @@ The vault will have three layers:
 
 The vault is built one step at a time. Each step adds one small piece and is saved as its own git commit, named after the step. You can always see what a step changed, and go back to it.
 
-This is step `tutorial-01-core-structure`. The folders exist now, but they are still empty.
+This is step `tutorial-02-schema-and-agents`. The agent now has its rules and skills. The Raw and Wiki folders are still empty.
 
 ## What is here
 
 - `Welcome.md`: this note.
+- `README.md`: how to set up and use the vault.
+- `AGENTS.md`: the instructions the AI agent reads first, before doing anything in this vault.
 - `.gitignore`: tells git which files to leave out of the history: your window layout and plugin state (they change every time you open Obsidian), large raw files, drafts, and anything secret such as passwords or keys.
 - `.obsidian/`: Obsidian's own settings for this vault.
 
@@ -35,14 +37,14 @@ This is step `tutorial-01-core-structure`. The folders exist now, but they are s
 | `Wiki/Entities/` | People, organisations, tools and places. |
 | `Wiki/Projects/` | Things being built or worked on. |
 | `Wiki/Logs/` | Dated records of what happened or was decided. |
-| `Schema/` | The rules the agent follows. |
+| `Schema/` | The rules the agent follows: note properties, names, a lint checklist and worked examples. |
 | `_templates/` | Starting shapes for new notes. |
-| `.agents/skills/` | Skills the agent uses inside this vault. Obsidian hides folders that start with a dot, so you will not see it there. |
+| `.agents/skills/` | Skills the agent uses inside this vault: ingest, query, lint and maintain. Obsidian hides folders that start with a dot, so you will not see it there. |
 | `scripts/` | Helper scripts that check the wiki. |
 | `tutorial/` | Notes about the tutorial steps. |
 
-Each empty folder holds a hidden `.gitkeep` file. Git does not save empty folders, so this tiny file keeps them in the history.
+Each folder that is still empty holds a hidden `.gitkeep` file. Git does not save empty folders, so this tiny file keeps them in the history.
 
 ## What comes next
 
-Step `tutorial-02-schema-and-agents` adds `AGENTS.md`, the schema rules and the starter agent skills.
+Step `tutorial-03-templates` adds note templates for sources and each kind of Wiki note.
