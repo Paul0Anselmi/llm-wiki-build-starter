@@ -15,7 +15,7 @@ Over time, `Wiki/` becomes a linked map of everything you have read, and you can
 
 - [Obsidian](https://obsidian.md), to read and browse the vault.
 - [Git](https://git-scm.com), to save the history and sync with GitHub.
-- An AI coding agent that can read and edit files in this folder, such as Claude Code.
+- An AI coding agent that can read and edit files in this folder, such as Claude Code. Point it at `AGENTS.md` first.
 
 ## Getting started
 
@@ -75,13 +75,13 @@ The vault is built one step at a time. Each step is a single git commit named af
 | --- | --- | --- |
 | `tutorial-00-empty-vault` | `Welcome.md`, `.gitignore` and Obsidian settings | Done |
 | `tutorial-01-core-structure` | The folder structure above | Done |
-| `tutorial-02-schema-and-agents` | `AGENTS.md`, the schema rules and the agent skills | Next |
-| `tutorial-03-templates` | Note templates for sources and each kind of Wiki note | Planned |
+| `tutorial-02-schema-and-agents` | `AGENTS.md`, the schema rules and the agent skills | Done |
+| `tutorial-03-templates` | Note templates for sources and each kind of Wiki note | Next |
 | `tutorial-04-tooling` | `scripts/wiki_tool.py` and the automatic checks | Planned |
 | `tutorial-05-first-ingest` | A first source compiled into Wiki notes | Planned |
 | `tutorial-06-query-and-lint` | The catalog, indexes and a full health check | Planned |
 
-Until step 02 adds the agent's rules, the agent has no instructions specific to this vault.
+The agent's rules are in `AGENTS.md` and `Schema/`. The commands they mention, such as `python3 scripts/wiki_tool.py build`, arrive in step 04. Until then the agent checks notes by hand against `Schema/lint-checklist.md`.
 
 ## Safety
 
