@@ -7,7 +7,7 @@ status: seed
 created: 2026-10-05
 updated: 2026-10-05
 sources:
-  - "[[Raw/Sources/Why LLM Wiki 🧠 Future Of Knowledge For Agentic AI & Humans]]"
+  - "[[Raw/Sources/why-llm-wiki]]"
 source_count: 1
 aliases:
   - "RAG"

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "LLM Wiki Source",
+  "behavior": "create",
+  "noteContentFormat": "{{content}}",
+  "properties": [
+    {
+      "name": "Title",
+      "value": "{{title}}",
+      "type": "text"
+    },
+    {
+      "name": "Author",
+      "value": "{{author}}",
+      "type": "text"
+    },
+    {
+      "name": "Reference",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "ContentType",
+      "value": "web",
+      "type": "multitext"
+    },
+    {
+      "name": "Created",
+      "value": "{{date|date:\"YYYY-MM-DD\"}}",
+      "type": "date"
+    },
+    {
+      "name": "Processed",
+      "value": "false",
+      "type": "checkbox"
+    },
+    {
+      "name": "tags",
+      "value": "source",
+      "type": "multitext"
+    }
+  ],
+  "triggers": [],
+  "noteNameFormat": "{{title|lower|replace:\"/[^a-z0-9]+/g\":\"-\"|replace:\"/^-+/\":\"\"|replace:\"/-+$/\":\"\"}}",
+  "path": "Raw/Sources"
+}
