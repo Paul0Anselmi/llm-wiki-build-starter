@@ -1,0 +1,21 @@
+# Obsidian: per-device window layout and caches (they change every time you open the vault)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# Operating system clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets: never commit passwords, tokens or keys
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Temporary files
+*.tmp
+*.swp
