@@ -40,7 +40,7 @@ Over time, `Wiki/` becomes a linked map of everything you have read, and you can
 | `Wiki/Projects/` | Things being built or worked on. | The agent |
 | `Wiki/Logs/` | Dated records of what happened or was decided. | The agent |
 | `Schema/` | The rules the agent follows. | You, with the agent's suggestions |
-| `_templates/` | Starting shapes for new notes. | You |
+| `_templates/` | Templates for new notes. In Obsidian: *Templates: Insert template*. | You |
 | `.agents/skills/` | Skills the agent uses inside this vault. Hidden in Obsidian because the name starts with a dot. | You |
 | `scripts/` | Helper scripts that check the wiki. | You |
 | `tutorial/` | Notes about the tutorial steps. | You |
@@ -76,8 +76,8 @@ The vault is built one step at a time. Each step is a single git commit named af
 | `tutorial-00-empty-vault` | `Welcome.md`, `.gitignore` and Obsidian settings | Done |
 | `tutorial-01-core-structure` | The folder structure above | Done |
 | `tutorial-02-schema-and-agents` | `AGENTS.md`, the schema rules and the agent skills | Done |
-| `tutorial-03-templates` | Note templates for sources and each kind of Wiki note | Next |
-| `tutorial-04-tooling` | `scripts/wiki_tool.py` and the automatic checks | Planned |
+| `tutorial-03-templates` | Note templates for sources and each kind of Wiki note | Done |
+| `tutorial-04-tooling` | `scripts/wiki_tool.py` and the automatic checks | Next |
 | `tutorial-05-first-ingest` | A first source compiled into Wiki notes | Planned |
 | `tutorial-06-query-and-lint` | The catalog, indexes and a full health check | Planned |
 

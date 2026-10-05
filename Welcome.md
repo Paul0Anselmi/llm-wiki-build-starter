@@ -16,7 +16,7 @@ The vault will have three layers:
 
 The vault is built one step at a time. Each step adds one small piece and is saved as its own git commit, named after the step. You can always see what a step changed, and go back to it.
 
-This is step `tutorial-02-schema-and-agents`. The agent now has its rules and skills. The Raw and Wiki folders are still empty.
+This is step `tutorial-03-templates`. The agent has its rules and skills, and `_templates/` has a template for each kind of note. The Raw and Wiki folders are still empty.
 
 ## What is here
 
@@ -38,13 +38,17 @@ This is step `tutorial-02-schema-and-agents`. The agent now has its rules and sk
 | `Wiki/Projects/` | Things being built or worked on. |
 | `Wiki/Logs/` | Dated records of what happened or was decided. |
 | `Schema/` | The rules the agent follows: note properties, names, a lint checklist and worked examples. |
-| `_templates/` | Starting shapes for new notes. |
+| `_templates/` | Templates for new notes: `source-note`, `concept-note`, `topic-note`, `entity-note`, `project-note` and `log-note`. |
 | `.agents/skills/` | Skills the agent uses inside this vault: ingest, query, lint and maintain. Obsidian hides folders that start with a dot, so you will not see it there. |
 | `scripts/` | Helper scripts that check the wiki. |
 | `tutorial/` | Notes about the tutorial steps. |
 
 Each folder that is still empty holds a hidden `.gitkeep` file. Git does not save empty folders, so this tiny file keeps them in the history.
 
+## Using a template
+
+In Obsidian, create a new note, open the command palette (`Ctrl+P`, or `Cmd+P` on a Mac) and run **Templates: Insert template**. Pick a template and Obsidian fills in the title and today's date.
+
 ## What comes next
 
-Step `tutorial-03-templates` adds note templates for sources and each kind of Wiki note.
+Step `tutorial-04-tooling` adds `scripts/wiki_tool.py`, the script that builds the indexes and checks the wiki.
