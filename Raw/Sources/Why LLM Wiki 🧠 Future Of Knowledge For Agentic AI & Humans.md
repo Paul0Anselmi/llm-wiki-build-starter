@@ -1,14 +1,15 @@
 ---
-title: "Why LLM Wiki? 🧠 Future Of Knowledge For Agentic AI & Humans"
-source: "https://www.youtube.com/watch?v=n4EVksU_EOs"
-author:
-  - "[[Wanderloots]]"
+Title: "Why LLM Wiki? 🧠 Future Of Knowledge For Agentic AI & Humans"
+Author: "[[Wanderloots]]"
+Reference: "https://www.youtube.com/watch?v=n4EVksU_EOs"
+ContentType:
+  - "video"
 published: 2026-04-25
-created: 2026-10-05
+Created: 2026-10-05
 Processed: true
 description: "Why do we need a LLM wiki? What is the future of shared knowledge between AI & Humans? In today's video, I explore how building a shared memory layer for EVERY AI tool can benefit both your human & AI"
 tags:
-  - "clippings"
+  - "source"
 ---
 ![](https://www.youtube.com/watch?v=n4EVksU_EOs)
 
