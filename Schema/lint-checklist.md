@@ -1,6 +1,6 @@
 # Lint checklist
 
-What a healthy wiki looks like. From tutorial step 04, `scripts/wiki_tool.py lint` and `source-lint` check most of this automatically. Until then, the agent checks it by hand.
+What a healthy wiki looks like. `scripts/wiki_tool.py lint`, `source-lint` and `scripts/audit_public.py` check most of this automatically (see `command-reference.md`). The agent checks the rest by hand.
 
 ## Compiled Wiki notes
 

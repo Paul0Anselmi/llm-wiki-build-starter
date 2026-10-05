@@ -15,6 +15,7 @@ Over time, `Wiki/` becomes a linked map of everything you have read, and you can
 
 - [Obsidian](https://obsidian.md), to read and browse the vault.
 - [Git](https://git-scm.com), to save the history and sync with GitHub.
+- [Python](https://www.python.org/downloads/) 3.8 or newer, to run the checks in `scripts/`. Nothing else to install.
 - An AI coding agent that can read and edit files in this folder, such as Claude Code. Point it at `AGENTS.md` first.
 
 ## Getting started
@@ -42,10 +43,24 @@ Over time, `Wiki/` becomes a linked map of everything you have read, and you can
 | `Schema/` | The rules the agent follows. | You, with the agent's suggestions |
 | `_templates/` | Templates for new notes. In Obsidian: *Templates: Insert template*. | You |
 | `.agents/skills/` | Skills the agent uses inside this vault. Hidden in Obsidian because the name starts with a dot. | You |
-| `scripts/` | Helper scripts that check the wiki. | You |
+| `scripts/` | Helper scripts that build the indexes and check the wiki. | You |
 | `tutorial/` | Notes about the tutorial steps. | You |
 
 Empty folders hold a hidden `.gitkeep` file so git keeps them.
+
+## Checking the wiki
+
+In a terminal opened inside the vault folder:
+
+| What | macOS / Linux | Windows |
+| --- | --- | --- |
+| Health check | `python3 scripts/wiki_tool.py doctor` | `python scripts/wiki_tool.py doctor` |
+| Rebuild the indexes | `python3 scripts/wiki_tool.py build` | `python scripts/wiki_tool.py build` |
+| Check the notes | `python3 scripts/wiki_tool.py lint` | `python scripts/wiki_tool.py lint` |
+| Search the wiki | `python3 scripts/wiki_tool.py search-catalog --query "text"` | `python scripts/wiki_tool.py search-catalog --query "text"` |
+| Check nothing private gets committed | `python3 scripts/audit_public.py` | `python scripts/audit_public.py` |
+
+On Windows, if `python` is not found, try `py`. Every command, and the optional pre-commit hook that runs the checks for you, is explained in `Schema/command-reference.md`.
 
 ## Keeping your vault in sync
 
@@ -77,11 +92,11 @@ The vault is built one step at a time. Each step is a single git commit named af
 | `tutorial-01-core-structure` | The folder structure above | Done |
 | `tutorial-02-schema-and-agents` | `AGENTS.md`, the schema rules and the agent skills | Done |
 | `tutorial-03-templates` | Note templates for sources and each kind of Wiki note | Done |
-| `tutorial-04-tooling` | `scripts/wiki_tool.py` and the automatic checks | Next |
-| `tutorial-05-first-ingest` | A first source compiled into Wiki notes | Planned |
+| `tutorial-04-tooling` | `scripts/wiki_tool.py` and the automatic checks | Done |
+| `tutorial-05-first-ingest` | A first source compiled into Wiki notes | Next |
 | `tutorial-06-query-and-lint` | The catalog, indexes and a full health check | Planned |
 
-The agent's rules are in `AGENTS.md` and `Schema/`. The commands they mention, such as `python3 scripts/wiki_tool.py build`, arrive in step 04. Until then the agent checks notes by hand against `Schema/lint-checklist.md`.
+The agent's rules are in `AGENTS.md` and `Schema/`.
 
 ## Safety
 

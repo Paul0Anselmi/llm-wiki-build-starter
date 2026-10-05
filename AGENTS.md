@@ -48,7 +48,7 @@ python3 scripts/wiki_tool.py source-scan --update --accept-covered
 python3 scripts/wiki_tool.py source-lint
 ```
 
-`scripts/wiki_tool.py`, `scripts/audit_public.py` and `Wiki/catalog.jsonl` are added in tutorial step 04. Until then, check notes by hand against `Schema/lint-checklist.md`.
+On Windows, use `python` (or `py`) instead of `python3`. If `Wiki/catalog.jsonl` does not exist yet, run `build` first. Every command is explained in `Schema/command-reference.md`.
 
 ## Skills
 
